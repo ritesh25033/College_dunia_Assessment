@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>College List</h1>
+        <input type="text" id="search-input" placeholder="Search by college name">
+        <div id="sort-controls">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="rating-asc">Rating (Ascending)</option>
+                <option value="rating-desc">Rating (Descending)</option>
+                <option value="fees-asc">Fees (Ascending)</option>
+                <option value="fees-desc">Fees (Descending)</option>
+                <option value="userReview-asc">User Review (Ascending)</option>
+                <option value="userReview-desc">User Review (Descending)</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <table id="college-table">
+            <thead>
+                <tr>
+                    <th>College Name</th>
+                    <th>Rating</th>
+                    <th>Fees</th>
+                    <th>User Review</th>
+                    <th>Featured</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be appended here by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

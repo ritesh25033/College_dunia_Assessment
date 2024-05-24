@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   let colleges = [];
   let displayedColleges = [];
-  const rowsToShow = 12;
+  const rowsToShow = 15;
   let start = 0;
   const tableBody = document.querySelector('#college-table tbody');
 
@@ -51,12 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', () => {
     console.log('scrolling');
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-    if (scrollTop + clientHeight >= scrollHeight - 12) {
+    if (scrollTop + clientHeight >= scrollHeight - 15) {
       console.log('i am at bottom');
       showData();
     }
   });
-
 
   // Search functionality
   document.getElementById('search-input').addEventListener('input', (event) => {
